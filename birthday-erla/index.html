@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Untuk Erla Aulia Saputri</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <div class="floaters" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <audio id="birthdaySong" src="assets/audio/TunggalEka.mp3" preload="auto"></audio>
+
+    <main>
+      <section class="screen screen--intro is-active" id="introScreen" aria-label="Halaman pembuka">
+        <div class="panel panel--center">
+          <p class="eyebrow">30 Juni mode: aktif</p>
+          <h1>Mbull, ada sesuatu nih.</h1>
+          <p class="lead">Bukan paket COD, bukan chat pinjol, cuma halaman kecil yang dibuat biar hari ulang tahunmu punya sedikit drama manis.</p>
+          <button class="button" id="startButton" type="button">Buka pelan-pelan</button>
+          <!-- <p class="tiny" id="musicStatus">Musik dan confetti akan mulai setelah tombol ini diklik.</p> -->
+        </div>
+      </section>
+
+      <section class="screen" id="wishScreen" aria-label="Ucapan ulang tahun">
+        <div class="panel panel--split">
+          <div class="cake-stage">
+            <span class="sparkle sparkle--one"></span>
+            <span class="sparkle sparkle--two"></span>
+            <span class="sparkle sparkle--three"></span>
+
+            <div class="cake" aria-hidden="true">
+              <div class="candle candle--one"><span></span></div>
+              <div class="candle candle--two"><span></span></div>
+              <div class="candle candle--three"><span></span></div>
+              <div class="icing"></div>
+              <div class="cake-body"></div>
+              <div class="plate"></div>
+            </div>
+          </div>
+
+          <div class="content">
+            <p class="eyebrow">Selamat ulang tahun</p>
+            <h2>Erla Aulia Saputri</h2>
+            <p class="message" id="typedMessage"></p>
+
+            <div class="joke-card">
+              <strong>Catatan penting dari panitia kecil-kecilan:</strong>
+              <p>Cie, bayi baru naik level lagi. Artinya, setiap 30 Juni minimal ada alasan buat makan enak. Ini bukan permintaan, ini hasil rapat mendadak.</p>
+            </div>
+
+            <div class="actions">
+              <button class="button" id="giftButton" type="button" hidden>Buka hadiah</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="giftScreen" aria-label="Halaman hadiah">
+        <div class="panel panel--center panel--wide">
+          <p class="eyebrow">Hadiah digital</p>
+          <h2>Buat Mbull yang makin naik level.</h2>
+          <p class="lead">Semoga umur baru ini isinya lebih banyak hal yang bikin lega, orang-orang yang tulus, dan momen random yang nanti jadi cerita lucu.</p>
+
+          <div class="birthday-badge">
+            <span>Erla Aulia Saputri</span>
+            <strong>30 Juni</strong>
+          </div>
+
+          <div class="gift-grid">
+            <article>
+              <span>01</span>
+              <h3>Himbauan !!!</h3>
+              <p>Jangan cemberut mulu, tetep jadi aul yg menggemaskan okeee ? 🥳</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Doa</h3>
+              <p>Semoga di tahun ini menjadi lebih baik mbull jgn turu mulu, makin rajin belajar 🦾</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Uhuyyyyy</h3>
+              <p>🥳🥳🥳</p>
+            </article>
+          </div>
+          <br>
+          <div class="quote">"Pelan-pelan aja. Yang penting Mbull tetap jadi Mbull, versi yang makin bahagia."</div>
+          <br>
+
+          <div class="actions actions--center">
+            <button class="button" id="productButton" type="button">Lihat isi kado</button>
+            <button class="button button--light" id="backButton" type="button">Lihat ucapan lagi</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="productScreen" aria-label="Halaman video kado">
+        <div class="panel panel--center panel--wide">
+          <p class="eyebrow">Bonus dari kado</p>
+          <h2>Ada video kecil buat kenalan sama isi kadonya.</h2>
+          <p class="lead">Cie-cie Kado Baru, Gas lah pamerin ke aku coba bagus apa ngga ?</p>
+
+          <div class="video-card">
+            <div>
+              <span class="video-label">Video pembahasan produk</span>
+              <h3>Penjelasan singkat soal isi kado</h3>
+              <p>Ini ada sedikit vidio tentang kadonya, semoga kamu suka sama kadonya yaa !</p>
+            </div>
+            <a class="button" id="productVideoLink" href="https://youtu.be/gNvUtwpMR3g" target="_blank" rel="noreferrer">Buka video</a>
+          </div>
+
+          <div class="quote">"Semoga kadonya kepake, bukan cuma jadi pajangan yang nasibnya berdebu tapi tetap disayang."</div>
+
+          <div class="actions actions--center">
+            <button class="button button--light" id="backToGiftButton" type="button">Balik ke hadiah</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
